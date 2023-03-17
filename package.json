@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "wrangler dev src/index.ts --local",
+    "dev": "wrangler dev src/index.ts --experimental-local",
     "deploy": "wrangler publish src/index.ts"
   },
   "dependencies": {

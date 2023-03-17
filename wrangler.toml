@@ -1,0 +1,6 @@
+name = ""
+compatibility_date = "2023-01-01"
+main = "src/index.ts"
+kv_namespaces = [
+  { binding = "TEST_NAMESPACE", id = "af04c142c5434c17944d6a64668643ad", preview_id = "0e6cf62959374dcd8406620e08aa24a8" },
+]

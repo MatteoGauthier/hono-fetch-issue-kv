@@ -7,8 +7,6 @@ type Env = {
   TEST_NAMESPACE: KVNamespace
 }
 
-// @xxx response.clone() issue maybe caused by zValidatior
-
 const app = new Hono<{ Bindings: Env }>()
 app.use(
   "/*",
@@ -19,6 +17,7 @@ app.use(
 
 app.post(
   "/hello",
+  // @xxx response.clone() issue maybe caused by zValidatior
   zValidator(
     "json",
     z.object({
